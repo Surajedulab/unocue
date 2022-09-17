@@ -1,0 +1,549 @@
+/*-------------- fonts.css ------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+        url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+        url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+        url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+        url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+
+
+:root {
+    --blue: #5330FF;
+    --white: #F5F5F5;
+    --black: #1E1E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*-------------- vertical menu bar ---------------- by Suraj*/
+
+.menu {
+    position: absolute;
+    top: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.menulogo {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.menuli {
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    padding: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menuli:hover {
+    background-color: var(--blue);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+li svg {
+    stroke: black;
+}
+
+li svg:hover {
+    stroke: var(--white);
+}
+
+/*-------------- horizontal menu bar ---------------- by Suraj*/
+
+.serch {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    width: 400px;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+.serchi {
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.inputserch {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    width: 350px;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+}
+
+.blr {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.blr label {
+    color: var(--white);
+    margin-right: 20px;
+}
+
+.blr button {
+    padding: 11px 24px;
+    margin-left: 20px;
+    border-radius: 12px;
+    border-color: var(--blue);
+    background-color: var(--blue);
+    border-style: solid;
+}
+
+.blr button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+/*-------------- first_slider ---------------- by Suraj*/
+
+
+.first_slider {
+    position: absolute;
+    top: 150px;
+    left: 180px;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides h1 {
+    font-style: normal;
+    font-family: 'Poppins';
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.slides p {
+    width: 415px;
+    font-style: normal;
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.slides button {
+    padding: 11px 24px;
+    margin-top: 40px;
+    border-radius: 12px;
+    border-color: var(--blue);
+    background-color: var(--blue);
+    border-style: solid;
+}
+
+.slides button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: left;
+}
+
+.manual-btn {
+    border: 2px solid #5330FF;
+    opacity: 0.2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: var(--blue);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*------------ automatic navigation -------------- by Suraj*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: left;
+    margin-top: 400px;
+}
+
+.navigation-auto div {
+    border: 2px solid var(--blue);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1,
+#radio2:checked~.navigation-auto .auto-btn2,
+#radio3:checked~.navigation-auto .auto-btn3,
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: var(--blue);
+}
+
+
+.confused {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+
+/*--------------------------Why choose Unocue----------------------------*/
+
+.choose {
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 120px;
+}
+
+.choose h1 {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+.choose h6 {
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/*------------------------ cards -----------------------------*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.cards svg {
+    margin-top: 44px;
+    margin-bottom: 30px;
+}
+
+.cards h2 {
+    font-style: normal;
+    font-family: 'Poppins';
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cards p {
+    margin-left: 15%;
+    margin-top: 16px;
+    width: 210px;
+    font-style: normal;
+    font-family: 'Poppins';
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    border-radius: 12px;
+    border-style: solid;
+}
+
+.card1 {
+    border-color: var(--blue);
+}
+
+.card2 {
+    margin-top: 8%;
+    border-color: #FF652F;
+}
+
+.card3 {
+    border-color: #FF4B76;
+}
+
+.card4 {
+    margin-top: 8%;
+    border-color: #C64EFF;
+}
+
+/*--------------------- yourgols  --------------------*/
+
+
+.yourgols {
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 120px;
+}
+
+.yourgols h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.yourgols p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.Ellipse1 {
+    position: absolute;
+    width: 892px;
+    height: 892px;
+    left: -552px;
+    top: 1869px;
+    border-radius: 50%;
+    background: #F3F0FF;
+}
+
+.Ellipse2 {
+    position: absolute;
+    width: 892px;
+    height: 892px;
+    left: 970px;
+    top: 2953px;
+    border-radius: 50%;
+    background: #FFF5EA;
+}
+
+.Ellipse3 {
+    position: absolute;
+    width: 892px;
+    height: 892px;
+    left: -466px;
+    top: 5205px;
+    border-radius: 50%;
+    background: #FFFDF2;
+}
+
+/*--------------------------- workshop -------------------*/
+
+.workshop {
+    display: flex;
+    position: absolute;
+    left: 128px;
+    width: 1165px;
+    height: 550px;
+    margin-top: 66px;
+    background: linear-gradient(109.1deg, #FFE1C0 36.16%, #FFC482 101.04%);
+    border-radius: 12px;
+    padding-right: 3%;
+}
+
+.workshop img {
+    margin: 66px 52px 0 38px;
+}
+
+.workshop h2 {
+    margin-top: 32px;
+    color: #4824F5;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.workshop h1 {
+    margin-top: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.workshop p {
+    margin-top: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 35px;
+}
+
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: #DDAF7C;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -70%;
+}
+
+.dot h3 {
+    color: var(--white);
+    margin-top: 35%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.days p {
+    width: 185px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.viewmore {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #4824F5;
+}
+
+/*-------------------- Mentor -------------------*/
+
+.mentor {
+    display: flex;
+    position: absolute;
+    width: 1250px;
+    height: 500px;
+    left: 236px;
+    top: 2700px;
+    background: linear-gradient(109.37deg, #FFF6DA 0.72%, #FFDF7B 63.75%);
+    border-radius: 12px;
+    padding-top: 3%;
+}
+
+.data {
+    width: 700px;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.mentor h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-bottom: 16px;
+    color: #4824F5;
+}
+
+.mentor h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.mentor p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.mentor img {
+    margin-top: 10%;
+    margin-right: 5%;
+}
