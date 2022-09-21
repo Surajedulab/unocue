@@ -28,6 +28,9 @@
 
 body {
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*-------------- vertical menu bar ---------------- by Suraj*/
@@ -256,7 +259,7 @@ li svg:hover {
 }
 
 
-/*--------------------------Why choose Unocue----------------------------*/
+/*--------------------------Why choose Unocue----------------------------by Suraj*/
 
 .choose {
     text-align: center;
@@ -276,7 +279,7 @@ li svg:hover {
     opacity: 0.8;
 }
 
-/*------------------------ cards -----------------------------*/
+/*------------------------ cards -----------------------------by Suraj*/
 
 .cards {
     display: flex;
@@ -336,13 +339,14 @@ li svg:hover {
     border-color: #C64EFF;
 }
 
-/*--------------------- yourgols  --------------------*/
+/*--------------------- yourgols  --------------------by Suraj*/
 
 
 .yourgols {
     text-align: center;
     font-family: 'Poppins';
     margin-top: 120px;
+    /* height: auto; */
 }
 
 .yourgols h1 {
@@ -364,6 +368,8 @@ li svg:hover {
     text-align: center;
 }
 
+/*----------------------- Ellipse -----------------by Suraj*/
+
 .Ellipse1 {
     position: absolute;
     width: 892px;
@@ -371,6 +377,7 @@ li svg:hover {
     left: -552px;
     top: 1869px;
     border-radius: 50%;
+    z-index: -2;
     background: #F3F0FF;
 }
 
@@ -379,9 +386,10 @@ li svg:hover {
     width: 892px;
     height: 892px;
     left: 970px;
-    top: 2953px;
-    border-radius: 50%;
+    top: 3000px;
     background: #FFF5EA;
+    z-index: -2;
+    border-radius: 50%;
 }
 
 .Ellipse3 {
@@ -389,17 +397,17 @@ li svg:hover {
     width: 892px;
     height: 892px;
     left: -466px;
-    top: 5205px;
-    border-radius: 50%;
+    top: 5000px;
     background: #FFFDF2;
+    z-index: -2;
+    border-radius: 50%;
 }
 
-/*--------------------------- workshop -------------------*/
+/*--------------------------- workshop ------------------- by Suraj*/
 
 .workshop {
     display: flex;
-    position: absolute;
-    left: 128px;
+    margin-left: 8%;
     width: 1165px;
     height: 550px;
     margin-top: 66px;
@@ -490,15 +498,14 @@ li svg:hover {
     color: #4824F5;
 }
 
-/*-------------------- Mentor -------------------*/
+/*-------------------- Mentor -------------------By Suraj*/
 
 .mentor {
     display: flex;
-    position: absolute;
     width: 1250px;
     height: 500px;
-    left: 236px;
-    top: 2700px;
+    margin-left: 15%;
+    margin-top: 8%;
     background: linear-gradient(109.37deg, #FFF6DA 0.72%, #FFDF7B 63.75%);
     border-radius: 12px;
     padding-top: 3%;
@@ -546,4 +553,182 @@ li svg:hover {
 .mentor img {
     margin-top: 10%;
     margin-right: 5%;
+}
+
+/*------------------- Experience ------------------by Suraj*/
+
+.experience {
+    display: flex;
+    width: 1164px;
+    height: 500px;
+    margin-left: 8%;
+    margin-top: 8%;
+    background: linear-gradient(109.1deg, #F2EFFF 36.16%, #C8BDFF 95.97%);
+    border-radius: 12px;
+    padding-right: 3%;
+}
+
+.experience img {
+    margin: 66px 52px 0 38px;
+}
+
+.experience h2 {
+    margin-top: 32px;
+    color: #4824F5;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.experience h1 {
+    margin-top: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.experience p {
+    margin-top: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+}
+
+/*--------------------- first step --------------------by Suraj*/
+
+.firststep img {
+    width: 100%;
+    margin-top: 8%;
+}
+
+.firststep .heading {
+    position: absolute;
+    position: absolute;
+    left: 440px;
+    top: 4000px;
+
+}
+
+.firststep h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+.firststep p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #1E1E1E;
+    opacity: 0.8;
+}
+
+/*-------------------- FA Questions  -------------------------------*/
+
+.FAQs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 840px;
+    margin-bottom: 10%;
+}
+
+.FAQs h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 60px;
+    margin-top: 10%;
+}
+
+.accordion {
+    color: #1E1E1E;
+    border-style: solid;
+    border-color: #C9BDFF;
+    background-color: var(--white);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.FAQs button {
+    display: flex;
+    gap: 10px;
+    color: #1E1E1E;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #C9BDFF;
+    background-color: var(--white);
+}
+
+.panel {
+    padding: 0 18px;
+    color: #4B4B4B;
+    background-color: white;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #C9BDFF;
+    display: none;
+    overflow: hidden;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/*----------------------- footer -------------------*/
+
+footer {
+    margin-top: auto;
+
+}
+
+footer img {
+    width: 100%;
+}
+
+footer .data {
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -25%;
+}
+
+footer .data a{
+    margin-bottom: 4%;
+} 
+
+.firstrow{
+    margin-bottom: 18%;
 }
